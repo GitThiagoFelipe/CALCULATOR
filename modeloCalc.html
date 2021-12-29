@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Eletricidade</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloCalc.css">
 </head>
+
 <body>
     <header>
-<h1>Cálculos de Eletricidade</h1>
+        <h1>Cálculos de Eletricidade</h1>
+        <h2>O que deseja calcular?</h2>
     </header>
-    <section>
-<div>
-<p>O que deseja calcular?</p>
-<p>
-    <input type="radio" name="opção" id="Tens">
-    <label for="mas">Tensão</label>
-    <input type="radio" name="opção" id="Corr" checked>
-    <label for="fem">Corrente</label>
-    <input type="radio" name="opção" id="Pot">
-    <label for="Pot">Potência</label>
-    </p>
 
-    <p>
-    <input type="radio" name="opção" id="Resist">
-    <label for="Resist">Resistência</label>
-    <input type="radio" name="opção" id="Cons">
-    <label for="Cons">Consumo Mensal</label>
-    </p>
-<p>
-    <input type="button" value="Calcular" onclick="Calcular()">
-</p>
-</div>
-<div id= "res">
-    Preencha os dados acima para ver o resultado!
+    <main>
+        <div>
+        
+            <p>
+                <input type="radio" name="opção" id="Tens">
+                <label class="escolha" for="mas">Tensão</label>
+                <input type="radio" name="opção" id="Corr" checked>
+                <label class="escolha" for="fem">Corrente</label>
+                <input type="radio" name="opção" id="Pot">
+                <label class="escolha" for="Pot">Potência</label>
+            </p>
 
- </div>
- 
-    </section>
+            <p>
+                <input type="radio" name="opção" id="Resist">
+                <label class="escolha" for="Resist">Resistência</label>
+                <input type="radio" name="opção" id="Cons">
+                <label class="escolha" for="Cons">Consumo Mensal</label>
+            </p>
+            <p>
+                <input type="button" value="Calcular" class="botao-calcular" onclick="Calcular()">
+            </p>
+        </div>
+        <div id="res">
+           <p class="resultado">Preencha os dados acima para ver o resultado!</p> 
+
+        </div>
+
+    </main>
     <footer>
-<p>&copy; Curso em Vídeo</p>
+        <p>&copy; Curso em Vídeo</p>
     </footer>
     <script src="ScriptCalc.js"></script>
 </body>
+
 </html>
