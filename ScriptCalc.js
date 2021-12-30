@@ -10,6 +10,10 @@ function Calcular() {
         var escolha = 4
     } else if (option[4].checked) {
         var escolha = 5
+    } else if (option[5].checked) {
+        var escolha = 6
+    } else if (option[6].checked) {
+        var escolha = 7
     }
 
     do {
@@ -58,12 +62,22 @@ function Calcular() {
                 break
 
             case 6:
-                var Vcc = Number(window.prompt('Qual valor da Tensão da fonte?')) //string
-                var Vr = Number(window.prompt('Qual valor de Tensão do LED?'))
-                var I_led = Number(window.prompt('Qual corrente do LED?')) //string
-                var resistor = (Vcc - Vr) / I_led
-                window.alert(`O Resistor do led é ${resistor} Oms`)
-                var resposta = confirm('Gostaria de continuar calculando?')
+                var Z = Number(window.prompt('Qual valor da Tensão na ODU Huawei?')) //string
+                    var Y = 15.9
+                    var C = -91.6
+                    var X = Y * Z + C
+                    res.innerHTML = (`Nível RX é ${X}dBm`)
+                    //var resposta = confirm('Gostaria de continuar calculando?')
+                break
+
+            case 7:
+                var Z = Number(window.prompt('Qual valor da Tensão na RAU?')) //string
+                    var Y = 26.146
+                    var C = -91.6
+                    var X = Y * Z + C
+                    res.innerHTML = (`Nível RX é ${X}dBm`)
+                   // var resposta = confirm('Gostaria de continuar calculando?')
+
                 break
 
             default:
