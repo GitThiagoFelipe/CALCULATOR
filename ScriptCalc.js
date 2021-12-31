@@ -19,65 +19,64 @@ function Calcular() {
     do {
         switch (escolha) {
             case 1:
-                var p = Number(window.prompt('Qual valor da Potência')) //string
-                var i = Number(window.prompt('Qual valor da Corrente?')) //string
+                var p = Number(window.prompt('Qual valor da Potência?'))
+                var i = Number(window.prompt('Qual valor da Corrente?'))
                 var u = p / i
-                res.innerHTML = (`A Tensão é igual a ${u} Volts`)
+                var Rst = parseFloat(u.toFixed(2))
+                res.innerHTML = (`A Tensão é igual a <strong> ${Rst} Volts <\strong>`)
                 break;
 
             case 2:
-                var p = Number(window.prompt('Qual valor da Potência?')) //string
-                var u = Number(window.prompt('Qual valor da Tensão?')) //string
+                var p = Number(window.prompt('Qual valor da Potência?'))
+                var u = Number(window.prompt('Qual valor da Tensão?'))
                 var i = p / u
-                res.innerHTML = (`A Corrente é igual a ${i} Amperes`)
-                //var resposta = confirm('Gostaria de continuar calculando?')
+                var Rst = parseFloat(i.toFixed(2))
+                res.innerHTML = (`A Corrente é igual a <strong> ${Rst} Amperes <\strong>`)
                 break
 
             case 3:
-                var u = Number(window.prompt('Qual valor da Tensão?')) //string
-                var i = Number(window.prompt('Qual valor da Corrente?')) //string
+                var u = Number(window.prompt('Qual valor da Tensão?'))
+                var i = Number(window.prompt('Qual valor da Corrente?'))
                 var p = u * i
-                res.innerHTML = (`A Potência é igual a ${p} Watts`)
-                //var resposta = confirm('Gostaria de continuar calculando?')
+                var Rst = parseFloat(p.toFixed(2))
+                res.innerHTML = (`A Potência é igual a <strong> ${Rst} Watts <\strong>`)
                 break
 
             case 4:
-                var u = Number(window.prompt('Qual valor da Tensão?')) //string
-                var i = Number(window.prompt('Qual valor da Corrente?')) //string
+                var u = Number(window.prompt('Qual valor da Tensão?'))
+                var i = Number(window.prompt('Qual valor da Corrente?'))
                 var r = u / i
-                res.innerHTML = (`A Resistência é igual a ${r} Oms`)
-                //var resposta = confirm('Gostaria de continuar calculando?')
+                var Rst = parseFloat(r.toFixed(2))
+                res.innerHTML = (`A Resistência é igual a <strong> ${Rst} Oms <\strong>`)
                 break
 
             case 5:
-                var p = Number(window.prompt('Qual a Potência do equipamento?')) //string
-                var h = Number(window.prompt('Quantas horas fica ligado por dia?')) //string
+                var p = Number(window.prompt('Qual a Potência do equipamento?'))
+                var h = Number(window.prompt('Quantas horas fica ligado por dia?'))
                 var dia = Number(window.prompt('Por quantos dias no mês?'))
                 var kw = Number(window.prompt('Qual preço do KW/h na sua conta de luz?'))
                 var consumo = p * h * dia / 1000
                 var s = consumo * kw
                 s = s.toLocaleString('pt-BR', { style: 'currency', currency: 'Brl' })
-                res.innerHTML = (`Seu consumo mensal é ${consumo} kw/h e custa ${s}`)
-                //var resposta = confirm('Gostaria de continuar calculando?')
+                res.innerHTML = (`Seu consumo mensal é <strong> ${consumo} kw/h <\strong> e custa ${s} <\strong>`)
                 break
 
             case 6:
-                var Z = Number(window.prompt('Qual valor da Tensão na ODU Huawei?')) //string
-                    var Y = 15.9
-                    var C = -91.6
-                    var X = Y * Z + C
-                    res.innerHTML = (`Nível RX é ${X}dBm`)
-                    //var resposta = confirm('Gostaria de continuar calculando?')
+                var Z = Number(window.prompt('Qual valor da Tensão na ODU Huawei?'))
+                var Y = 15.9
+                var C = -91.6
+                var X = Y * Z + C
+                var Rst = parseFloat(X.toFixed(2))
+                res.innerHTML = (`Nível RX é <strong> ${Rst}dBm <strong>`)
                 break
 
             case 7:
-                var Z = Number(window.prompt('Qual valor da Tensão na RAU?')) //string
-                    var Y = 26.146
-                    var C = -91.6
-                    var X = Y * Z + C
-                    res.innerHTML = (`Nível RX é ${X}dBm`)
-                   // var resposta = confirm('Gostaria de continuar calculando?')
-
+                var Z = Number(window.prompt('Qual valor da Tensão na RAU?'))
+                var Y = 26.146
+                var C = -91.6
+                var X = Y * Z + C
+                var Rst = parseFloat(X.toFixed(2))
+                res.innerHTML = (`Nível RX é <strong> ${Rst}dBm <strong>`)
                 break
 
             default:
