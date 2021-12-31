@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&family=Signika+Negative&display=swap');
 
 body{
-    background: linear-gradient(68.15deg, #23282f 16.62%, #5f528e 85.61%);
+    background: url(solar-eclipse.jpg);
     font: normal 15pt arial;
 
 }
@@ -22,20 +22,28 @@ main{
 
 .escolha {
     font-family: cursive;
+    font-size: 20px;
 }
 
 .botao-calcular {
     background-color: #ebb88e;
     border: none;
     width: 100px;
-    height: 25px;
-    border-radius: 20px;
+    height: 30px;
+    border-radius: 10px;
     font-family: 'verdana';
-    font-style: italic ;
     font-size: 16px;
     font-weight: 700;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30);
     
+}
+
+.botao-calcular:hover{
+    background-color: rgba(161, 89, 29, 0.53);
+}
+
+.button {
+    padding-top: 120px;
 }
 
 .resultado {
