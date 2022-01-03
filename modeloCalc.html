@@ -11,13 +11,13 @@
 
 <body>
     <header>
-        <h1>Cálculos de Eletricidade</h1>
+        <h1>CALCULATOR</h1>
         <h2>O que deseja calcular?</h2>
     </header>
 
     <main>
         <div>
-        
+
             <p>
                 <input type="radio" name="opção" id="Tens" checked>
                 <label class="escolha" for="Tens">Tensão</label>
@@ -44,20 +44,22 @@
         </div>
 
         <div id="res">
-           <p class="resultado">Selecione a opção desejada!</p>
+            <h3 class="resultado"> Selecione a opção desejada!</h3>
         </div>
 
-        <div>
-            <input type="button" value="Calcular" class="botao-calcular" onclick="Calcular()">
-        </div>
+        <a href="#" onclick="Calcular()">
+            Calcular
+        </a>
 
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; Curso em Vídeo</p>
     </footer>
 
     <script src="ScriptCalc.js"></script>
+
+
 </body>
 
 </html>
