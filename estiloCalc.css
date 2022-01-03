@@ -12,47 +12,61 @@ header{
 }
 
 main{
-    background: white;
+    
+    background: rgb(236, 234, 234, 0.5);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
+    height: 200px;
     margin: auto;
-    box-shadow: 5px 5px 5px rgba(41, 38, 236, 0.966);
+    box-shadow: 5px 5px 5px #036bf4;
 }
 
 .escolha {
     font-family: cursive;
     font-size: 20px;
 }
+.escolha:hover{
+    cursor: pointer;
+}
 
-.botao-calcular {
-    background-color: #ebb88e;
-    border: none;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    font-family: 'verdana';
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30);
+a {
+
     
+    background: rgb(236, 234, 234, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 30px 0vh;
+    color: #070707;
+    font-size: 20px;
+    font-weight:  bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+
 }
 
-.botao-calcular:hover{
-    background-color: rgba(161, 89, 29, 0.53);
+a:hover {
+    color: #070707;
+    background-color: azure;
+    box-shadow: 0 0 5px #03a8f4,
+                0 0 20px #03a8f4,
+                0 0 35px #03a8f4,
+                0 0 50px #03e9f4;
 }
 
-.button {
-    padding-top: 120px;
-}
+
 
 .resultado {
     font-family: cursive;
     font-size: 20px;
 }
 
-footer{
+.rodape{
+    margin-top: 30%;
     color: white;
     text-align: center;
     font-style: italic;
+    
 }
