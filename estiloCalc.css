@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&family=Signika+Negative&display=swap');
-
 body{
     background: url(solar-eclipse.jpg);
-    font: normal 15pt arial;
 
 }
 
 header{
     color: rgb(250, 245, 245);
+    font: normal 15pt arial;
     text-align: center;
 }
 
 main{
-    
+    display: block;
     background: rgb(236, 234, 234, 0.5);
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align:center;
     width: 500px;
-    height: 200px;
-    margin: auto;
+    height: 225px;
     box-shadow: 5px 5px 5px #036bf4;
 }
 
@@ -30,20 +29,30 @@ main{
     cursor: pointer;
 }
 
-a {
+.section-resultado{
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
 
-    
+.resultado{
+    font-size: 20px;
+
+}
+
+a {
     background: rgb(236, 234, 234, 0.5);
     border-radius: 10px;
-    display: inline-block;
+    box-shadow: 5px 5px 5px #036bf4;
     padding: 15px 10px;
-    margin: 30px 0vh;
+    margin-top: 30px;
     color: #070707;
+    font-family: Arial;
     font-size: 20px;
     font-weight:  bold;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 1s;
 
 }
 
@@ -56,17 +65,15 @@ a:hover {
                 0 0 50px #03e9f4;
 }
 
-
-
-.resultado {
-    font-family: cursive;
-    font-size: 20px;
+.section-botão {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .rodape{
-    margin-top: 30%;
+    margin-top: 20%;
     color: white;
     text-align: center;
     font-style: italic;
-    
 }
