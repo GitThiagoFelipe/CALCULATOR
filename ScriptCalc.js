@@ -71,12 +71,12 @@ function Calcular() {
                 break
 
             case 7:
-                var Z = Number(window.prompt('Qual valor da Tensão na RAU?'))
-                var Y = 26.146
-                var C = -91.6
-                var X = Y * Z + C
+                var Z = Number(window.prompt('Qual nível RX você deseja?'))
+                var Y = 120
+                var C = 40
+                var X = (Z + Y) / C
                 var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst}dBm <strong>`)
+                res.innerHTML = (`A tensão deve ser <strong> ${Rst}volts <strong>`)
                 break
 
             default:
