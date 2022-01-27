@@ -63,7 +63,7 @@ function Calcular() {
                 break
 
             case 6:
-                var Z = Number(window.prompt('Qual valor da Tensão na ODU Huawei?'))
+                var Z = Number(window.prompt('Qual valor de Tensão na ODU Huawei?'))
                 var Y = 15.9
                 var C = -91.6
                 var X = Y * Z + C
@@ -72,12 +72,12 @@ function Calcular() {
                 break
 
             case 7:
-                var Z = Number(window.prompt('Qual nível RX você deseja?'))
+                var Z = Number(window.prompt('Qual valor de Tensão na RAU?'))
                 var Y = 120
-                var C = 40
-                var X = (Z + Y) / C
+                var C = 0.025
+                var X = Z / C - Y
                 var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`A tensão deve ser <strong> ${Rst}volts <strong>`)
+                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
                 break
 
             default:
