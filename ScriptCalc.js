@@ -43,11 +43,12 @@ function Calcular() {
                 break
 
             case 4:
-                var u = Number(window.prompt('Qual valor da Tensão?'))
-                var i = Number(window.prompt('Qual valor da Corrente?'))
-                var r = u / i
-                var Rst = parseFloat(r.toFixed(2))
-                res.innerHTML = (`A Resistência é igual a <strong> ${Rst} Oms <\strong>`)
+                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE?'))
+                var Y = 100
+                var C = 0.0375
+                var X = Z / C - Y
+                var Rst = parseFloat(X.toFixed(2))
+                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
                 break
 
             case 5:
