@@ -11,11 +11,12 @@ body{
     background: url("solar-eclipse.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
-    
+    position: relative;
 }
 
 header h1{
     display: block;
+    position: relative;
     color: rgb(250, 245, 245);
     font-family: 'Kings', cursive;
     font-size: 45px;
