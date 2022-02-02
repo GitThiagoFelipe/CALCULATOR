@@ -19,11 +19,12 @@ function Calcular() {
     do {
         switch (escolha) {
             case 1:
-                var p = Number(window.prompt('Qual valor da Potência?'))
-                var i = Number(window.prompt('Qual valor da Corrente?'))
-                var u = p / i
-                var Rst = parseFloat(u.toFixed(2))
-                res.innerHTML = (`A Tensão é igual a <strong> ${Rst} Volts <\strong>`)
+                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE?'))
+                var Y = 60
+                var C = 0.117
+                var X = Z / C - Y
+                var Rst = parseFloat(X.toFixed(2))
+                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
                 break;
 
             case 2:
