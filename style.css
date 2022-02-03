@@ -18,21 +18,21 @@ body{
 header h1{
     display: block;
     position: relative;
-    top: 10px;
+    width: auto;
+    top: 15px;
     color: rgb(250, 245, 245);
     font-family: 'Kings', cursive;
     font-size: 45px;
     text-align: center;
 }
+
 h2{ 
-    display: block;
     position: relative;
     top: 10px;
     color: rgb(250, 245, 245);
     font-family: arial;
     font-size: 27px;
     text-align: center;
-    padding-bottom: 10px;
 }
 
 main{
@@ -115,4 +115,10 @@ a:hover {
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .container {
+        position: absolute;
+    }
 }
