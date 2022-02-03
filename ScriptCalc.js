@@ -19,7 +19,7 @@ function Calcular() {
     do {
         switch (escolha) {
             case 1:
-                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE?'))
+                var Z = Number(window.prompt('Qual a tensão na ODU SIAE AlfoPlus?'))
                 var Y = 60
                 var C = 0.117
                 var X = Z / C - Y
@@ -28,23 +28,24 @@ function Calcular() {
                 break;
 
             case 2:
-                var p = Number(window.prompt('Qual valor da Potência?'))
-                var u = Number(window.prompt('Qual valor da Tensão?'))
-                var i = p / u
-                var Rst = parseFloat(i.toFixed(2))
-                res.innerHTML = (`A Corrente é igual a <strong> ${Rst} Amperes <\strong>`)
+                var Z = Number(window.prompt('Qual a tensão na ODU SIAE Alfo80HDX?'))
+                var Y = 65.5
+                var C = 0.0560
+                var X = Z / C - Y
+                var Rst = parseFloat(X.toFixed(2))
+                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
                 break
 
-            case 3:
+            /*case 3:
                 var u = Number(window.prompt('Qual valor da Tensão?'))
                 var i = Number(window.prompt('Qual valor da Corrente?'))
                 var p = u * i
                 var Rst = parseFloat(p.toFixed(2))
                 res.innerHTML = (`A Potência é igual a <strong> ${Rst} Watts <\strong>`)
-                break
+                break*/
 
-            case 4:
-                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE?'))
+            case 3:
+                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE AlcPlus?'))
                 var Y = 100
                 var C = 0.0375
                 var X = Z / C - Y
@@ -52,7 +53,7 @@ function Calcular() {
                 res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
                 break
 
-            case 5:
+            case 4:
                 var p = Number(window.prompt('Qual a Potência do equipamento?'))
                 var h = Number(window.prompt('Quantas horas fica ligado por dia?'))
                 var dia = Number(window.prompt('Por quantos dias no mês?'))
@@ -63,7 +64,7 @@ function Calcular() {
                 res.innerHTML = (`Seu consumo mensal é <strong> ${consumo} kw/h <\strong> e custa ${s} <\strong>`)
                 break
 
-            case 6:
+            case 5:
                 var Z = Number(window.prompt('Qual valor de Tensão na ODU Huawei?'))
                 var Y = 15.9
                 var C = -91.6
@@ -72,7 +73,7 @@ function Calcular() {
                 res.innerHTML = (`Nível RX é <strong> ${Rst}dBm <strong>`)
                 break
 
-            case 7:
+            case 6:
                 var Z = Number(window.prompt('Qual valor de Tensão na RAU?'))
                 var Y = 120
                 var C = 0.025
