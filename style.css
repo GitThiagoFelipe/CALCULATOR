@@ -1,133 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kings&family=Sriracha&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kings&family=Sriracha&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-
-body{
-    background: url("solar-eclipse.jpg") no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header h1{
-    display: block;
-    position: relative;
-    width: auto;
-    top: 15px;
-    color: rgb(250, 245, 245);
-    font-family: 'Kings', cursive;
-    font-size: 45px;
-    text-align: center;
+body {
+  background: url("solar-eclipse.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  align-items: center;
 }
 
-h2{ 
-    position: relative;
-    top: 10px;
-    color: rgb(250, 245, 245);
-    font-family: arial;
-    font-size: 27px;
-    text-align: center;
+header h1 {
+  display: block;
+  position: relative;
+  width: auto;
+  top: 20px;
+  color: rgb(250, 245, 245);
+  font-family: "Kings", cursive;
+  font-size: 45px;
+  text-align: center;
 }
 
-main{
-    display: block;
-    position: relative;
-    background: rgb(236, 234, 234, 0.5);
-    border-radius: 10px;
-    top: 50px;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: left;
-    width: 480px;
-    height: 250px;
-    box-shadow: 5px 5px 5px #036bf4;
+h2 {
+  position: relative;
+  top: 15px;
+  color: rgb(250, 245, 245);
+  font-family: arial;
+  font-size: 27px;
+  text-align: center;
+}
+
+main {
+  display: block;
+  position: relative;
+  background: rgb(236, 234, 234, 0.5);
+  border-radius: 10px;
+  top: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: left;
+  width: 480px;
+  height: 250px;
+  box-shadow: 5px 5px 5px #036bf4;
 }
 
 .escolha {
-    display: inline-flex;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 22px;
-    padding: 10px;
-
-
+  display: inline-flex;
+  font-family: "Architects Daughter", cursive;
+  font-size: 22px;
+  padding: 10px;
 }
-.escolha:hover{
-    cursor: pointer;
+.escolha:hover {
+  cursor: pointer;
 }
 
-.section-resultado{
-    font-family: 'Sriracha', cursive;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 50px;
-    text-align: center;
+.section-resultado {
+  font-family: "Sriracha", cursive;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.resultado{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-
+.resultado {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 
 a {
-    display: block;
-    position: relative;
-    align-items: center;
-    top: 60px;
-    text-align: center;
-    background: rgb(236, 234, 234, 0.5);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #036bf4;
-    padding: 15px 10px;
-    margin-top: 30px;
-    color: #070707;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight:  bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 1s;
-
+  display: block;
+  position: relative;
+  align-items: center;
+  top: 60px;
+  text-align: center;
+  background: rgb(236, 234, 234, 0.5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #036bf4;
+  padding: 15px 10px;
+  margin-top: 30px;
+  color: #070707;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
 }
 
 a:hover {
-    color: #070707;
-    background-color: azure;
-    box-shadow: 0 0 5px #03a8f4,
-                0 0 20px #03a8f4,
-                0 0 35px #03a8f4,
-                0 0 50px #03e9f4;
+  color: #070707;
+  background-color: azure;
+  box-shadow: 0 0 5px #03a8f4, 0 0 20px #03a8f4, 0 0 35px #03a8f4,
+    0 0 50px #03e9f4;
 }
 
 .section-botão {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 
-.rodape p{
-    margin-top: 20vh;
-    text-align: center;
-    color: white;
-    font-style: italic;
+.rodape p {
+  margin-top: 20vh;
+  text-align: center;
+  color: white;
+  font-style: italic;
 }
 
-.logozap{
-    display: inline-block;
-    margin: -3px 5px;
-    position: absolute;
-    width: 20px;
+.logozap {
+  display: inline-block;
+  margin: -3px 5px;
+  position: absolute;
+  width: 20px;
 }
 
 @media (max-width: 600px) {
-    .container {
-        position: absolute;
-    }
+  .container {
+    position: absolute;
+  }
 }

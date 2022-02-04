@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cálculo de Eletricidade</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <h1>CALCULATOR</h1>
-            <h2>O que você deseja calcular?</h2>
-        </header>
-        <main>
-            <div>
-                <p>
-                    <input type="radio" name="opção" id="SiaeAlfo" checked>
-                    <label class="escolha" for="SiaeAlfo">Rx SIAE AlfoPlus</label>
-                    <input type="radio" name="opção" id="Siae80G">
-                    <label class="escolha" for="Siae80G">RX ALFO 80HDX</label>
-                </p>
-                
-                <p>
-                    <input type="radio" name="opção" id="Siae">
-                    <label class="escolha" for="Siae">RX SIAE AlcPlus</label>
-                    <input type="radio" name="opção" id="Cons">
-                    <label class="escolha" for="Cons">Consumo Kw/h Mês</label>
-                </p>
+      <header>
+        <h1>CALCULATOR</h1>
+        <h2>O que você deseja calcular?</h2>
+      </header>
+      <main>
+        <div>
+          <p>
+            <input type="radio" name="opção" id="SiaeAlfo" checked />
+            <label class="escolha" for="SiaeAlfo">Rx SIAE ALFO</label>
+            <input type="radio" name="opção" id="Siae80G" />
+            <label class="escolha" for="Siae80G">RX ALFO 80HDX</label>
+          </p>
 
-                <p>
-                    <input type="radio" name="opção" id="Huaw">
-                    <label class="escolha" for="Huaw">Nível RX Huawei</label>
-                    <input type="radio" name="opção" id="TN">
-                    <label class="escolha" for="TN">Nível RX TN Ericsson</label>
-                </p>
-            </div>
+          <p>
+            <input type="radio" name="opção" id="Siae" />
+            <label class="escolha" for="Siae">RX SIAE AlcPlus</label>
+            <input type="radio" name="opção" id="Cons" />
+            <label class="escolha" for="Cons">Consumo Kw/h Mês</label>
+          </p>
 
-            <section class="section-resultado" id="res">
-                <h3 class="resultado"> Selecione a opção desejada!</h3>
-            </section>
-        </main>
+          <p>
+            <input type="radio" name="opção" id="Huaw" />
+            <label class="escolha" for="Huaw">Nível RX Huawei</label>
+            <input type="radio" name="opção" id="TN" />
+            <label class="escolha" for="TN">Nível RX TN Ericsson</label>
+          </p>
+        </div>
 
-
-        <section class="section-botão">
-            <a href="#" onclick="Calcular()">PRESS START</a>
+        <section class="section-resultado" id="res">
+          <h3 class="resultado">Selecione a opção desejada!</h3>
         </section>
+      </main>
 
-        <footer class="rodape">
-            <p>Suporte (12) 98272-0340 <img class="logozap" src="https://img.icons8.com/color/48/000000/whatsapp--v6.png"/></p>
-        </footer>
+      <section class="section-botão">
+        <a href="#" onclick="Calcular()">PRESS START</a>
+      </section>
+
+      <footer class="rodape">
+        <p>
+          Suporte (12) 98272-0340
+          <img
+            class="logozap"
+            src="https://img.icons8.com/color/48/000000/whatsapp--v6.png"
+          />
+        </p>
+      </footer>
     </div>
 
     <script src="ScriptCalc.js"></script>
-
-
-</body>
-
+  </body>
 </html>
