@@ -1,42 +1,42 @@
 function Calcular() {
-    var option = document.getElementsByName('opção')
-    if (option[0].checked) {
-        var escolha = 1
-    } else if (option[1].checked) {
-        var escolha = 2
-    } else if (option[2].checked) {
-        var escolha = 3
-    } else if (option[3].checked) {
-        var escolha = 4
-    } else if (option[4].checked) {
-        var escolha = 5
-    } else if (option[5].checked) {
-        var escolha = 6
-    } else if (option[6].checked) {
-        var escolha = 7
-    }
+  var option = document.getElementsByName("opção");
+  if (option[0].checked) {
+    var escolha = 1;
+  } else if (option[1].checked) {
+    var escolha = 2;
+  } else if (option[2].checked) {
+    var escolha = 3;
+  } else if (option[3].checked) {
+    var escolha = 4;
+  } else if (option[4].checked) {
+    var escolha = 5;
+  } else if (option[5].checked) {
+    var escolha = 6;
+  } else if (option[6].checked) {
+    var escolha = 7;
+  }
 
-    do {
-        switch (escolha) {
-            case 1:
-                var Z = Number(window.prompt('Qual a tensão na ODU SIAE AlfoPlus?'))
-                var Y = 60
-                var C = 0.117
-                var X = Z / C - Y
-                var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
-                break;
+  do {
+    switch (escolha) {
+      case 1:
+        var Z = Number(window.prompt("Qual a tensão na ODU SIAE AlfoPlus?"));
+        var Y = 60;
+        var C = 0.117;
+        var X = Z / C - Y;
+        var Rst = parseFloat(X.toFixed(2));
+        res.innerHTML = `Nível RX é <strong> ${Rst} dBm <strong>`;
+        break;
 
-            case 2:
-                var Z = Number(window.prompt('Qual a tensão na ODU SIAE Alfo80HDX?'))
-                var Y = 65.5
-                var C = 0.0560
-                var X = Z / C - Y
-                var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
-                break
+      case 2:
+        var Z = Number(window.prompt("Qual a tensão na ODU SIAE Alfo80HDX?"));
+        var Y = 65.5;
+        var C = 0.056;
+        var X = Z / C - Y;
+        var Rst = parseFloat(X.toFixed(2));
+        res.innerHTML = `Nível RX é <strong> ${Rst} dBm <strong>`;
+        break;
 
-            /*case 3:
+      /*case 3:
                 var u = Number(window.prompt('Qual valor da Tensão?'))
                 var i = Number(window.prompt('Qual valor da Corrente?'))
                 var p = u * i
@@ -44,45 +44,49 @@ function Calcular() {
                 res.innerHTML = (`A Potência é igual a <strong> ${Rst} Watts <\strong>`)
                 break*/
 
-            case 3:
-                var Z = Number(window.prompt('Qual valor de tensão na ODU SIAE AlcPlus?'))
-                var Y = 100
-                var C = 0.0375
-                var X = Z / C - Y
-                var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
-                break
+      case 3:
+        var Z = Number(
+          window.prompt("Qual valor de tensão na ODU SIAE AlcPlus?")
+        );
+        var Y = 100;
+        var C = 0.0375;
+        var X = Z / C - Y;
+        var Rst = parseFloat(X.toFixed(2));
+        res.innerHTML = `Nível RX é <strong> ${Rst} dBm <strong>`;
+        break;
 
-            case 4:
-                var p = Number(window.prompt('Qual a Potência do equipamento?'))
-                var h = Number(window.prompt('Quantas horas fica ligado por dia?'))
-                var dia = Number(window.prompt('Por quantos dias no mês?'))
-                var kw = Number(window.prompt('Qual preço do KW/h na sua conta de luz?'))
-                var consumo = p * h * dia / 1000
-                var s = consumo * kw
-                s = s.toLocaleString('pt-BR', { style: 'currency', currency: 'Brl' })
-                res.innerHTML = (`Seu consumo mensal é <strong> ${consumo} kw/h <\strong> e custa ${s} <\strong>`)
-                break
+      case 4:
+        var p = Number(window.prompt("Qual a Potência do equipamento?"));
+        var h = Number(window.prompt("Quantas horas fica ligado por dia?"));
+        var dia = Number(window.prompt("Por quantos dias no mês?"));
+        var kw = Number(
+          window.prompt("Qual preço do KW/h na sua conta de luz?")
+        );
+        var consumo = (p * h * dia) / 1000;
+        var s = consumo * kw;
+        s = s.toLocaleString("pt-BR", { style: "currency", currency: "Brl" });
+        res.innerHTML = `Seu consumo mensal é <strong> ${consumo} kw/h <\strong> e custa ${s} <\strong>`;
+        break;
 
-            case 5:
-                var Z = Number(window.prompt('Qual valor de Tensão na ODU Huawei?'))
-                var Y = 15.9
-                var C = -91.6
-                var X = Y * Z + C
-                var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst}dBm <strong>`)
-                break
+      case 5:
+        var Z = Number(window.prompt("Qual valor de Tensão na ODU Huawei?"));
+        var Y = 15.9;
+        var C = -91.6;
+        var X = Y * Z + C;
+        var Rst = parseFloat(X.toFixed(2));
+        res.innerHTML = `Nível RX é <strong> ${Rst}dBm <strong>`;
+        break;
 
-            case 6:
-                var Z = Number(window.prompt('Qual valor de Tensão na RAU?'))
-                var Y = 120
-                var C = 0.025
-                var X = Z / C - Y
-                var Rst = parseFloat(X.toFixed(2))
-                res.innerHTML = (`Nível RX é <strong> ${Rst} dBm <strong>`)
-                break
+      case 6:
+        var Z = Number(window.prompt("Qual valor de Tensão na RAU?"));
+        var Y = 120;
+        var C = 0.02445;
+        var X = Z / C - Y;
+        var Rst = parseFloat(X.toFixed(2));
+        res.innerHTML = `Nível RX é <strong> ${Rst} dBm <strong>`;
+        break;
 
-            default:
-        }
-    } while (resposta == true)
+      default:
+    }
+  } while (resposta == true);
 }
